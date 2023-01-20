@@ -27,7 +27,7 @@ export const modalHtml = (data) => {
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal" id="close-modal">Add</button>
+        <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal" id="add-task">Add</button>
         <button type="button" class="btn btn-primary close-modal">Close</button>
       </div>
     </div>

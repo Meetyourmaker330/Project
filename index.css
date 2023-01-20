@@ -1,5 +1,9 @@
-.container {
-    position: relative;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #AED2F3;
 }
 
 #modal {
@@ -12,4 +16,20 @@
     border-radius: 4px;
     z-index: 10000;
     background-color: #fff;
+}
+
+.col-new {
+    background-color: #59B4D1;
+}
+
+.col-in-progress {
+    background-color: #D0935A;
+}
+
+.col-review {
+    background-color: #945AD1;
+}
+
+.col-done {
+    background-color: #4CAC78;
 }

@@ -12,14 +12,24 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header d-flex justify-content-between p-3">
-            <h1 class="title">Board</h1>
-            <button class="btn btn-warning" id="new-task">new</button>
-        </header>
-        <main class="board d-flex" id="board"></main>
-    </div>
+    <div class="container-fluid overflow-hidden">
+        <div class="container">
+            <header class="header d-flex justify-content-between p-3">
+                <button class="btn btn-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <h1 class="title">Board</h1>
+                <button class="btn btn-light" id="new-task">new</button>
+            </header>
+            <main class="d-flex overflow-hidden" id="board">
 
+            </main>
+        </div>
+    </div>
     <script src="index.js" type="module"></script>
 </body>
 

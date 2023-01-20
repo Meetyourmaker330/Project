@@ -9,7 +9,7 @@ const app = () => {
     templateModal()
     addNewTask()
     createTask(data)
-    deleteTask(data)
+    deleteTask()
 }
 // template modal window
 const templateModal = () => {
@@ -17,9 +17,9 @@ const templateModal = () => {
     document.body.append(modal)
     modal.innerHTML = modalHtml(data)
     modal.setAttribute('id', 'modal')
-    modal.style.display = 'block'
+    modal.style.display = 'none'
 }
-// open modal
+// new task
 const addNewTask = () => {
     document.getElementById('new-task').addEventListener('click', () => {
         document.getElementById('modal').style.display = 'block'
@@ -27,7 +27,7 @@ const addNewTask = () => {
 }
 // create task
 const createTask = (arr) => {
-    document.getElementById('close-modal').addEventListener('click', () => {
+    document.getElementById('add-task').addEventListener('click', () => {
         document.getElementById('modal').style.display = 'none'
         const fieldTitle = document.getElementById('field-title')
         const fielDescription = document.getElementById('field-description')
@@ -45,19 +45,7 @@ const createTask = (arr) => {
 
 }
 //delete task
-const deleteTask = (arr, id) => {
-    const board = document.getElementById('board')
-    board.addEventListener('click', (event) => {
-        let target = event.target
-        console.log(target)
-        if (arr.length > 0) {
-            arr.map((item, ind) => {
-                let task = item.todos.forEach(element => {
-                    console.log(element)
-                });
-                console.log(task)
-            })
-        }
-    })
+const deleteTask = () => {
+
 }
 app()
